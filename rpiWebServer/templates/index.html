@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Fun GPIO Control Demo</title>
+    <link rel="stylesheet" href='../static/style.css' />
+</head>
+
+<body>
+    <h1>RasPi GPIO Control</h1>
+    <h2> Actuator Status & Control</h2>
+    <h3> BLU LED ==> {{ ledBlu }} ==>
+        {% if ledBlu  == 1 %}
+        <a href="/ledBlu/off" class="button">Turn Off</a>
+        {% else %}
+        <a href="/ledBlu/on" class="button">Turn On</a>
+        {% endif %}
+    </h3>
+    <h3> YLW LED ==> {{ ledYlw }} ==>
+        {% if ledYlw  == 1 %}
+        <a href="/ledYlw/off" class="button">Turn Off</a>
+        {% else %}
+        <a href="/ledYlw/on" class="button">Turn On</a>
+        {% endif %}
+    </h3>
+    <h3> GRN LED ==> {{ ledGrn }} ==>
+        {% if ledGrn  == 1 %}
+        <a href="/ledGrn/off" class="button">Turn Off</a>
+        {% else %}
+        <a href="/ledGrn/on" class="button">Turn On</a>
+        {% endif %}
+    </h3>
+</body>
+</html>
